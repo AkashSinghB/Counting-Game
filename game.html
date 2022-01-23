@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+    <title>Document</title>
+  </head>
+
+  <body>
+    <div id="image"></div>
+    <div class="container">
+      <div class="gameGrid" id="gameGrid"></div>
+
+      <div class="calcGrid">
+        <div class="calc">
+          <div class="center" id="numr1">
+            <label id="numerator1"></label>
+          </div>
+          <div class="center">
+            <label id="denominator1"></label>
+          </div>
+        </div>
+
+        <div id="subDiv"></div>
+
+        <div class="calc">
+          <div class="center" id="numr2">
+            <label id="numerator2"></label>
+          </div>
+          <div class="center">
+            <label id="denominator2"></label>
+          </div>
+        </div>
+
+        <div id="equals" class="center">
+          <label>=</label>
+        </div>
+
+        <div class="calc">
+          <div class="center" id="numr3">
+            <input
+              id="numerator3"
+              placeholder="N"
+              type="number"
+              onchange="check()"
+            />
+          </div>
+          <div class="center">
+            <input id="denominator3" placeholder="D" type="number" />
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+  <script src="js/game.js"></script>
+</html>

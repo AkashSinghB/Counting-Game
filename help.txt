@@ -1,0 +1,1 @@
+Open the whole folder inside vs code then open the html file with Liveserver through vs code

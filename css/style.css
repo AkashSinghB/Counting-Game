@@ -1,0 +1,139 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: "Lato", sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#image {
+  background-image: url("../assests/bg.png");
+  background-color: #cccccc;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100vh;
+  filter: blur(3px);
+  -webkit-filter: blur(3px);
+  z-index: 1;
+}
+.image-blur {
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+}
+.heading {
+  font-size: 4rem;
+  color: #ff2e00;
+  font-weight: 900;
+  position: absolute;
+  top: 0;
+  text-shadow: 2px 2px black;
+}
+.gamebtn {
+  position: absolute;
+  top: 0;
+  width: 100%;
+  height: 100%;
+}
+.gamebtn button {
+  width: 20rem;
+  height: 6rem;
+  font-size: 3rem;
+  font-weight: bold;
+  color: floralwhite;
+  border: none;
+  border-radius: 2rem;
+  background-color: #ff2e00;
+  text-shadow: 2px 2px black;
+}
+
+.gamebtn button:hover {
+  color: #ff2e00;
+  background-color: white;
+  transition: 0.5s ease-in;
+  box-shadow: 4px 6px 13px rgba(0, 0, 0, 0.4);
+}
+
+.gamebtn button:active {
+  color: #ff2e00;
+  background-color: white;
+  transition: 0.5s ease-in;
+  box-shadow: 4px 6px 13px rgba(0, 0, 0, 0.3);
+}
+
+/* ---------game.html css-------------- */
+
+.container {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+}
+.gameGrid {
+  display: grid;
+  padding: 10px;
+}
+
+.gridItem {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 20px;
+  font-size: 30px;
+  text-align: center;
+}
+/* .gridItem:hover {
+  background-color: blanchedalmond;
+} */
+.gridItem:active {
+  background-color: blue;
+}
+.active,
+.gridItem:hover {
+  background-color: blue;
+}
+.secondColor {
+  background-color: darkgreen;
+}
+
+.calc {
+  font-size: 3em;
+}
+.calcGrid {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-evenly;
+  width: 70%;
+}
+#numr1,
+#numr2,
+#numr3 {
+  border-bottom: 2px solid black;
+}
+#subDiv {
+  border-bottom: 2px solid black;
+  width: 2rem;
+  height: 50%;
+}
+#equals {
+  font-size: 3rem;
+}
+#numerator3,
+#denominator3 {
+  font-size: 3rem;
+  width: 5rem;
+  border: none;
+}
+#numerator3,
+#denominator3:focus {
+  border: none;
+  outline: none;
+}
